@@ -90,14 +90,14 @@ public class StringParser {
   public double getFlesch()
   {
     double fle;
-    fle=206.835-((1.015)*(countWords()/countSentences()))-(84.6 * countSyllables()); 
+    fle= 206.835 -(1.015* countWords()/countSentences()) - (84.6 * countSyllables()/countWords());
     return fle;
   }
 
   public double gradeLevel()
   {
     double grade;
-    grade = (0.39 * (countWords()/countSentences()) )+ (11.8 * countSyllables())- 15.59;
+    grade = (.39* countWords()/countSentences()) + (11.8 * countSyllables()/countWords())-15.59;
     return grade;
   }
 }
